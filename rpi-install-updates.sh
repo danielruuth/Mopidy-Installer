@@ -18,6 +18,6 @@ sudo update-rc.d mopidy enable
 
 sudo SKIP_WARNING=1 BRANCH=stable rpi-update
 
-sudo pip3 install -U Mopidy-Mobile Mopidy-Moped Mopidy-Musicbox-Webclient Mopidy-Websettings Mopidy-Simple-Webclient Mopidy-Spotify Mopidy-Spotify-Tunigo Mopidy-Youtube Mopidy-Soundcloud Mopidy-Dirble Mopidy-Tunein Mopidy-AlarmClock Mopidy-PlaybackDefaults youtube-dl Mopidy-Iris Mopidy-Local-Sqlite
+sudo pip3 install -U Mopidy-Mobile Mopidy-Moped Mopidy-Musicbox-Webclient Mopidy-Websettings Mopidy-Simple-Webclient Mopidy-Spotify Spotify-Web Mopidy-Spotify-Tunigo Mopidy-Youtube Mopidy-Soundcloud Mopidy-Dirble Mopidy-Tunein Mopidy-AlarmClock Mopidy-PlaybackDefaults youtube-dl Mopidy-Iris Mopidy-Local-Sqlite
 
 sudo sync
