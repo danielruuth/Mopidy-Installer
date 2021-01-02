@@ -27,7 +27,7 @@ apt-get update
 DEBIAN_FRONTEND=noninteractive apt-get -y install python3-pip python3-dev build-essential iptables-persistent mopidy libspotify-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad
 
 # Install Python packages
-pip3 install Mopidy-Mobile Mopidy-Moped Mopidy-Musicbox-Webclient Mopidy-Websettings Mopidy-Simple-Webclient Mopidy-Spotify Mopidy-Spotify-Tunigo Spotify-Web Mopidy-Youtube Mopidy-Soundcloud Mopidy-Dirble Mopidy-Tunein Mopidy-AlarmClock Mopidy-PlaybackDefaults youtube-dl Mopidy-Iris Mopidy-Local-Sqlite
+pip3 install Mopidy-Mobile Mopidy-Moped Mopidy-Musicbox-Webclient Mopidy-Websettings Mopidy-Simple-Webclient Mopidy-Spotify Mopidy-Spotify-Tunigo Mopidy-Spotify-Web Mopidy-Youtube Mopidy-Soundcloud Mopidy-Dirble Mopidy-Tunein Mopidy-AlarmClock Mopidy-PlaybackDefaults youtube-dl Mopidy-Iris Mopidy-Local-Sqlite
 
 # Install shairport
 apt-get install shairport-sync
