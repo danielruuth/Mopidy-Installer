@@ -27,7 +27,22 @@ apt-get update
 DEBIAN_FRONTEND=noninteractive apt-get -y install python3-pip python3-dev build-essential iptables-persistent mopidy libspotify-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad
 
 # Install Python packages
-pip3 install Mopidy-Mobile Mopidy-Moped Mopidy-Musicbox-Webclient Mopidy-Websettings Mopidy-Simple-Webclient Mopidy-Spotify Mopidy-Spotify-Tunigo Mopidy-Youtube Mopidy-Soundcloud Mopidy-Dirble Mopidy-Tunein Mopidy-AlarmClock Mopidy-PlaybackDefaults youtube-dl Mopidy-Iris Mopidy-Local-Sqlite
+pip3 install Mopidy-Mobile Mopidy-Moped Mopidy-Musicbox-Webclient Mopidy-Websettings Mopidy-Simple-Webclient Mopidy-Spotify Mopidy-Spotify-Tunigo Spotify-Web Mopidy-Youtube Mopidy-Soundcloud Mopidy-Dirble Mopidy-Tunein Mopidy-AlarmClock Mopidy-PlaybackDefaults youtube-dl Mopidy-Iris Mopidy-Local-Sqlite
+
+# Install shairport
+apt-get install shairport-sync
+
+# Install snapcast client
+wget https://github.com/badaix/snapcast/releases/download/v0.22.0/snapclient_0.22.0-1_armhf.deb
+dpkg -i snapclient_0.22.0-1_armhf.deb
+apt-get -f install
+update-rc.d snapclient defaults
+
+# Install snapcast server
+wget https://github.com/badaix/snapcast/releases/download/v0.22.0/snapserver_0.22.0-1_armhf.deb
+dpkg -i snapserver_0.22.0-1_armhf.deb
+apt-get -f install
+
 
 # Allow shutdown for Mopidy-Websettings
 echo "mopidy ALL=(root) NOPASSWD: /sbin/shutdown -h now, /sbin/shutdown -r now" > /etc/sudoers.d/020_mopidy_shutdown
