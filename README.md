@@ -2,9 +2,9 @@ Mopidy Installer
 ===============
 Script for installing [Pi MusicBox](https://www.pimusicbox.com/)-like [Mopidy](https://mopidy.com/) environment on [Raspbian](https://www.raspberrypi.org/downloads/raspbian/). 
 
-Version 1.0.2
+Version 1.0.3 by Daniel Ruuth, added support for snapcast, shairport-sync and the spotify-web extension
 
-Copyright (c) 2016-2020 Dāvis Mošenkovs
+Copyright (c) 2016-2020 Dāvis Mošenkovs, ammendments made by Daniel Ruuth 2021
 
 ## Introduction
 
