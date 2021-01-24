@@ -31,6 +31,8 @@ pip3 install Mopidy-Mobile Mopidy-Moped Mopidy-Musicbox-Webclient Mopidy-Websett
 
 # Install shairport
 apt-get install shairport-sync
+update-rc.d shairport-sync defaults
+update-rc.d shairport-sync enable
 
 # Install snapcast client
 wget https://github.com/badaix/snapcast/releases/download/v0.22.0/snapclient_0.22.0-1_armhf.deb
